@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --nav-height: 70px;
+}
+html {
+  scroll-padding-top: var(--nav-height);
+}
+
+body {
+  margin: 0;
+  padding-top: var(--nav-height);
+  width: 100%;
+  min-height: 100vh;
+}
+
+section {
+  min-height: calc(100vh - var(--nav-height));
+  scroll-margin-top: var(--nav-height);
+}
+
+.body-font {
+  font-family: "Poppins";
+}
+.heading-font {
+  /* font-family: "Montserrat"; */
+  font-family: "Lora";
+}
+.chocolate-text {
+  color: rgb(166, 82, 23);
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding-right: 1rem;
+  z-index: 10;
+}
+
+section {
+  min-height: calc(100vh - var(--nav-height));
+}
+
+.logo {
+  width: 180px;
+}
+.logo img {
+  width: 100%;
+}
+.nav-links ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+.nav-links a {
+  color: black;
+  text-decoration: none;
+}
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-buttons i {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+.chocolate-links {
+  padding: 0.5rem 1.3rem;
+  color: white;
+  background-color: rgb(166, 82, 23);
+  border-radius: 999px;
+  height: fit-content;
+  text-decoration: none;
+  font-size: 1rem;
+  vertical-align: middle;
+  transition: all 0.15s;
+}
+.chocolate-links:hover {
+  background-color: rgb(110, 55, 15);
+  transform: scale(1.05);
+}
+.chocolate-links:active {
+  transform: scale(1);
+}
+/* checked */
+.home-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: calc(100vh - var(--nav-height));
+  column-gap: 3rem;
+  padding: 1rem 5rem;
+  align-items: center;
+}
+
+.home-page-left {
+}
+.trending-text {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.home-page-heading {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.18;
+}
+.home-page-heading p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+.home-page-description {
+  font-size: 1rem;
+  color: rgb(134, 134, 134);
+  width: 70%;
+  line-height: 1.6;
+}
+
+.cta {
+  display: flex;
+  gap: 1.8rem;
+  margin-top: 2.3rem;
+}
+.watch-video-link {
+  color: black;
+  height: fit-content;
+  text-decoration: none;
+  font-size: 1rem;
+  vertical-align: middle;
+  transition: all 0.15s;
+  padding: 0.5rem 1.3rem;
+  border-radius: 999px;
+  box-shadow: 0 0 5px rgba(166, 82, 23, 0.2);
+}
+.watch-video-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px rgba(166, 82, 23, 0.5);
+}
+.watch-video-link:active {
+  transform: scale(1);
+}
+.watch-video-link i {
+  vertical-align: middle;
+}
+.watch-video-link span {
+  vertical-align: middle;
+}
+
+.home-page-right {
+  position: relative;
+}
+.home-page-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.accent-chair-price-card {
+  padding: 0.6rem 1rem;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  bottom: 2rem;
+  right: 0.5rem;
+}
+.accent-chair-price-card .card-product-name {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+.accent-chair-price-card .card-product-type {
+  font-size: 0.8rem;
+  color: gray;
+  display: inline-block;
+  margin-right: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.accent-chair-price-card .card-product-price {
+  color: black;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.accent-chair-price-card hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+.color-options * {
+  display: inline-block;
+  margin-top: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+.color-options p {
+  font-size: 0.8rem;
+  color: gray;
+  vertical-align: middle;
+  margin-right: 4rem;
+}
+.colors {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.color-options #first {
+  background-color: rgb(249, 228, 203);
+}
+.color-options #second {
+  background-color: rgb(54, 54, 54);
+}
+.color-options #third {
+  margin-right: 0;
+  background-color: rgb(152, 152, 152);
+}
