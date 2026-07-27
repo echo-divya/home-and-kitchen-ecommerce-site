@@ -70,16 +70,41 @@ section {
 .nav-links a {
   color: black;
   text-decoration: none;
+  transition: color 0.3 ease;
+}
+.nav-links a:hover {
+  color: rgb(166, 82, 23);
 }
 .nav-buttons {
   justify-self: end;
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 .nav-buttons i {
   padding-left: 0;
-  padding-right: 1.5rem;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+.fa-magnifying-glass {
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+}
+.fa-magnifying-glass:hover {
+  color: rgb(166, 82, 23);
+}
+.fa-heart {
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+}
+.fa-heart:hover {
+  color: rgb(166, 82, 23);
+}
+.fa-bag-shopping {
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+}
+.fa-bag-shopping:hover {
+  color: rgb(166, 82, 23);
 }
 .chocolate-links {
   padding: 0.5rem 1.3rem;
@@ -89,14 +114,15 @@ section {
   height: fit-content;
   text-decoration: none;
   font-size: 1rem;
-  vertical-align: middle;
-  transition: all 0.15s;
+  transition: background-color 0.15s ease, 
+              transform 0.15s ease;
 }
 .chocolate-links:hover {
-  background-color: rgb(110, 55, 15);
+  background-color: rgb(222, 113, 36);
   transform: scale(1.05);
 }
 .chocolate-links:active {
+  background-color: rgb(166, 82, 23);
   transform: scale(1);
 }
 /* checked */
@@ -139,14 +165,14 @@ section {
 .cta {
   display: flex;
   gap: 1.8rem;
-  margin-top: 2.3rem;
+  margin-top: 2.5rem;
+  align-items: center;
 }
 .watch-video-link {
   color: black;
   height: fit-content;
   text-decoration: none;
   font-size: 1rem;
-  vertical-align: middle;
   transition: all 0.15s;
   padding: 0.5rem 1.3rem;
   border-radius: 999px;
@@ -185,6 +211,9 @@ section {
   position: absolute;
   bottom: 2rem;
   right: 0.5rem;
+}
+.accent-chair-price-card:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 .accent-chair-price-card .card-product-name {
   font-size: 1rem;
