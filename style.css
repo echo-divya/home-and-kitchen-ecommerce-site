@@ -20,7 +20,7 @@ body {
 section {
   padding: 1rem 5rem;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   scroll-margin-top: var(--nav-height);
 }
 
@@ -127,7 +127,7 @@ nav {
   background-color: rgb(166, 82, 23);
   transform: scale(1);
 }
-/* checked */
+
 .home-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -286,4 +286,46 @@ nav {
 .color-options #third {
   margin-right: 0;
   background-color: rgb(152, 152, 152);
+}
+
+/* shop-page-styles */
+
+.shop-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.shop-page-card {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 1.5rem;
+  padding: 2rem 2.5rem;
+  align-items: center;
+}
+.shop-page-card-image img{
+  width: 100%;
+  object-fit: cover;
+}
+.shop-page-card-text .shop-page-card-heading {
+  font-size: 1.7rem;
+  line-height: 1.4;
+  margin-bottom: 0.7rem;
+}
+.shop-page-card-text .shop-page-card-description {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+.shop-page-card-text .shop-page-card-link a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+#shop-page-card-1 {
+  background-color: #F6EFE7;
+}
+#shop-page-card-2 {
+  background-color: #F0F0E7;
+}
+#shop-page-card-2 a{
+  color: rgb(0, 0, 0);
 }
