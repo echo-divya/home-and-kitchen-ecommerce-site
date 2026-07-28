@@ -363,7 +363,8 @@ nav {
 .collections-page-product-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 0.5rem;
+  column-gap: 0.9rem;
+  transition: box-shadow 0.15s ease;
 }
 .collections-page-cards {
   background-color: rgb(230, 230, 230);
@@ -399,4 +400,7 @@ nav {
 .collections-product-price {
   font-weight: 500;
   font-size: 0.85rem;
+}
+.collections-page-cards:hover{
+  box-shadow: 0 4px 0.4rem rgba(0, 0, 0, 0.2);
 }
