@@ -293,7 +293,8 @@ nav {
 .shop-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
+  padding: 1rem 3rem;
 }
 .shop-page-card {
   display: grid;
@@ -319,13 +320,26 @@ nav {
 .shop-page-card-text .shop-page-card-link a {
   text-decoration: none;
   font-size: 1rem;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.1rem;
+  transition: border-color 0.3s ease;
+}
+.shop-page-card-text .shop-page-card-link a:hover {
+  border-color: rgb(166, 82, 23);
 }
 #shop-page-card-1 {
   background-color: #F6EFE7;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
 }
 #shop-page-card-2 {
   background-color: #F0F0E7;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
 }
 #shop-page-card-2 a{
   color: rgb(0, 0, 0);
+}
+#shop-page-card-2 a:hover{
+  border-color: rgb(0, 0, 0);
 }
