@@ -18,7 +18,9 @@ body {
 }
 
 section {
-  min-height: calc(100vh - var(--nav-height));
+  padding: 1rem 5rem;
+  width: 100%;
+  margin-bottom: 1rem;
   scroll-margin-top: var(--nav-height);
 }
 
@@ -50,11 +52,6 @@ nav {
   z-index: 10;
 }
 
-section {
-  padding: 1rem 5rem;
-  width: 100%;
-  margin-bottom: 1rem;
-}
 
 .logo {
   width: 12rem;
