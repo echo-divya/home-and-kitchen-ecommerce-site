@@ -32,6 +32,9 @@ section {
 .chocolate-text {
   color: rgb(166, 82, 23);
 }
+.gray-text {
+  color: rgb(134, 134, 134);
+}
 nav {
   position: fixed;
   top: 0;
@@ -48,7 +51,9 @@ nav {
 }
 
 section {
-  min-height: calc(100vh - var(--nav-height));
+  padding: 1rem 5rem;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -129,11 +134,9 @@ section {
 .home-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
   box-sizing: border-box;
   min-height: calc(100vh - var(--nav-height));
   column-gap: 3rem;
-  padding: 1rem 5rem;
   align-items: center;
 }
 
@@ -157,7 +160,6 @@ section {
 }
 .home-page-description {
   font-size: 1rem;
-  color: rgb(134, 134, 134);
   width: 70%;
   line-height: 1.6;
 }
@@ -189,13 +191,34 @@ section {
 .watch-video-link:active {
   transform: scale(1);
 }
-.watch-video-link i {
-  vertical-align: middle;
+.fa-play {
+  color: rgb(0, 0, 0);
 }
-.watch-video-link span {
-  vertical-align: middle;
+.loved-by {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 2.7rem;
+  font-size: 0.8rem;
 }
-
+.loved-by-images {
+  display: flex;
+  align-items: center;
+}
+.people-image {
+  width: 2rem;
+  height: 2rem;
+  background-color: gray;
+  border: none;
+  border-radius: 50%;
+}
+.people-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
 .home-page-right {
   position: relative;
 }
@@ -223,7 +246,6 @@ section {
 }
 .accent-chair-price-card .card-product-type {
   font-size: 0.8rem;
-  color: gray;
   display: inline-block;
   margin-right: 4rem;
   margin-top: 0;
@@ -247,7 +269,6 @@ section {
 }
 .color-options p {
   font-size: 0.8rem;
-  color: gray;
   vertical-align: middle;
   margin-right: 4rem;
 }
