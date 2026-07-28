@@ -364,7 +364,6 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   column-gap: 0.9rem;
-  transition: box-shadow 0.15s ease;
 }
 .collections-page-cards {
   background-color: rgb(230, 230, 230);
@@ -372,6 +371,7 @@ nav {
   border-radius: 2%;
   display: grid;
   grid-template-rows: 65% 35%;
+  transition: box-shadow 0.15s ease;
 }
 .fa-star {
   color: rgb(222, 113, 36);
@@ -386,6 +386,7 @@ nav {
   position: absolute;
   bottom: 0.5rem;
   right: 0.9rem;
+  cursor: pointer;
 }
 .collections-product-name {
   font-size: 0.85rem;
