@@ -5,6 +5,8 @@
 }
 :root {
   --nav-height: 70px;
+  --heading-font: "Lora";
+  --body-font: "Poppins";
 }
 html {
   scroll-padding-top: var(--nav-height);
@@ -25,11 +27,11 @@ section {
 }
 
 .body-font {
-  font-family: "Poppins";
+  font-family: var(--body-font);
 }
 .heading-font {
   /* font-family: "Montserrat"; */
-  font-family: "Lora";
+  font-family: var(--heading-font);
 }
 .chocolate-text {
   color: rgb(166, 82, 23);
@@ -131,7 +133,6 @@ nav {
 .home-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  box-sizing: border-box;
   min-height: calc(100vh - var(--nav-height));
   column-gap: 3rem;
   align-items: center;
@@ -350,6 +351,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 2.5rem;
+  margin-bottom: 1rem;
 }
 .collections-page-heading {
   align-self: center;
@@ -404,4 +406,182 @@ nav {
 }
 .collections-page-cards:hover{
   box-shadow: 0 4px 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+/* about-page styles */
+
+
+.about-page-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #F7EEE7;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.about-page-image img {
+  width: 100%;
+  object-fit: cover;
+  background-color: #F7EEE6;
+}
+.about-page-text {
+  background-color: #F7EEE6;
+  padding-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.limited-offer-text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+.offer {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+.bestsellers {
+  font-size: 0.9rem;
+  margin-bottom: 1.8rem;
+  font-weight: 500;
+}
+.about-page-text a{
+  border-radius: 0.5rem;
+  width: fit-content;
+}
+
+/* contact-page styles */
+
+.contact-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+.contact-page-h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+.contact-page-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+.contact-page-card {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  background-color: rgb(230, 230, 230);
+  row-gap: 0.5rem;
+  border-radius: 1rem;
+  transition: box-shadow 0.15s ease;
+}
+.contact-page-card:hover{
+  box-shadow: 0 4px 0.4rem rgba(0, 0, 0, 0.2);
+}
+.contact-card-image img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.contact-card-text {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.4rem;
+}
+.contact-card-text p {
+  margin: 0;
+}
+.card-topic {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+.card-date {
+  font-size: 0.8rem;
+}
+
+/* support page styles */
+
+.support-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.support-page-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.support-page-card-text .one {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.support-page-card-text .two {
+  font-size: 0.7rem;
+}
+.support-page-card {
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.support-page-card:hover {
+  color: rgb(222, 113, 36);
+}
+
+/* footer styles */
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(166, 82, 23);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 2rem 2rem;
+  column-gap: 3rem;
+  transition: all 0.3s ease;
+}
+footer:hover {
+  background-color: rgb(222, 113, 36);
+}
+footer a{
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: var(--body-font);
+  display: block;
+  margin-bottom: 0.8rem;
+}
+.footer-logo {
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+}
+.footer-grid-headings {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+  margin-top: 1.2rem;
+}
+.fa-brands {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.6rem 0.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.fa-brands:hover{
+  color: rgb(222, 113, 36);
+  background-color: white;
 }
