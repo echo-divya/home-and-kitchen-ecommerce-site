@@ -77,7 +77,7 @@ nav {
   transition: color 0.3s ease;
 }
 .nav-links a:hover {
-  color: rgb(166, 82, 23);
+  color: rgb(222, 113, 36);
 }
 .nav-buttons {
   justify-self: end;
@@ -94,21 +94,21 @@ nav {
   transition: color 0.3s ease;
 }
 .fa-magnifying-glass:hover {
-  color: rgb(166, 82, 23);
+  color: rgb(222, 113, 36);
 }
 .fa-heart {
   color: rgb(0, 0, 0);
   transition: color 0.3s ease;
 }
 .fa-heart:hover {
-  color: rgb(166, 82, 23);
+  color: rgb(222, 113, 36);
 }
 .fa-bag-shopping {
   color: rgb(0, 0, 0);
   transition: color 0.3s ease;
 }
 .fa-bag-shopping:hover {
-  color: rgb(166, 82, 23);
+  color: rgb(222, 113, 36);
 }
 .chocolate-links {
   padding: 0.5rem 1.3rem;
@@ -184,7 +184,7 @@ nav {
 }
 .watch-video-link:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 5px rgba(166, 82, 23, 0.5);
+  box-shadow: 0 0 5px rgba(222, 113, 36, 0.5);
 }
 .watch-video-link:active {
   transform: scale(1);
@@ -376,6 +376,10 @@ nav {
   transition: box-shadow 0.15s ease;
 }
 .fa-star {
+  color: rgb(166, 82, 23);
+  cursor: pointer;
+}
+.fa-star:hover {
   color: rgb(222, 113, 36);
 }
 .collections-product-image img{
